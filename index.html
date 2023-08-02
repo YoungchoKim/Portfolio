@@ -63,117 +63,149 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <img src="images/Profile.jpg" alt="Hyony&#39;s profile" />
-        <h2>Hello I`m Nurse Corder, Hyon</h2>
-        <p>A software engineer currnetly residing in Jeonja, Korea</p>
-        <a href="#contact">Cantact Me</a>
+        <img
+          class="home__avatar"
+          src="images/Profile.jpg"
+          alt="Hyony&#39;s profile"
+        />
+        <h2 class="home__title">
+          Hello <br />
+          I&#39;m <strong class="home__title--strong"> Nurse </strong>Corder,
+          Hyon
+        </h2>
+        <p class="home__description">
+          A software engineer currnetly residing in Jeonja, Korea
+        </p>
+        <a class="home__contact" href="#contact">Cantact Me</a>
       </section>
       <!-- About -->
-      <section id="about">
-        <h2>About me</h2>
-        <p>
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
           fugiat. Quo excepturi numquam, veniam harum distinctio, a maiores
           consequatur ipsum deleniti esse mollitia corporis fuga perferendis
           nesciunt maxime nisi nemo.
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__p">Front-end</p>
             <p>HTML, CSS, Javascript, TypeScript, React, Vue, Web APIs</p>
           </li>
-          <li>
-            <i class="fa-solid fa-mobile"></i>
-            <p>Mobile</p>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__p">Mobile</p>
             <p>Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
           </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>back-end</p>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__p">back-end</p>
             <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="jobs">
+          <li class="job">
             <img src="images/jobs/google.png" alt="google logo" />
             <div>
-              <p>Google as Senior Sfotware Engineer</p>
-              <p>2019 Oct = Until now</p>
+              <p class="job__name">Google as Senior Sfotware Engineer</p>
+              <p class="job_period">2019 Oct = Until now</p>
             </div>
           </li>
-          <li>
+          <li class="job">
             <img src="images/jobs/samsung.png" alt="samsung logo" />
             <div>
-              <p>Samsung as Software Engineer</p>
-              <p>2014 Sept - 2019 Oct</p>
+              <p class="job__name">Samsung as Software Engineer</p>
+              <p class="job_period">2014 Sept - 2019 Oct</p>
             </div>
           </li>
         </ul>
       </section>
       <!-- Skills -->
-      <section id="skill">
-        <h2>My Skills</h2>
-        <p>Skills & Attributes</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-          debitis rerum est nobis deleniti harum. Natus harum aut, ipsam nemo
-          adipisci reiciendis nam labore officia id dolores nihil molestiae
-          numquam.
-        </p>
-        <div>
-          <section>
-            <h3>Coding Skills</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>98%</span></div>
-                <div><div style="width: 98%"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>TypeScript</span><span>80%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>React</span><span>79%</span></div>
-                <div><div style="width: 79%"></div></div>
-              </li>
-              <li>
-                <div><span>NodeJs</span><span>68%</span></div>
-                <div><div style="width: 68%"></div></div>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Android Studio Code</li>
-              <li>iOS develop tools</li>
-              <li>Sketch app</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Etc</h3>
-            <ul>
-              <li>Git</li>
-              <li>Scrum Master</li>
-              <li>Math</li>
-            </ul>
-          </section>
+      <section id="skill" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            debitis rerum est nobis deleniti harum. Natus harum aut, ipsam nemo
+            adipisci reiciendis nam labore officia id dolores nihil molestiae
+            numquam.
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>79%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 79%"></div>
+                  </div>
+                </li>
+                <li>
+                  <div><span>NodeJs</span><span>68%</span></div>
+                  <div><div style="width: 68%"></div></div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio Code</li>
+                <li>iOS develop tools</li>
+                <li>Sketch app</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Scrum Master</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- Work -->
-      <section id="work">
-        <h2>My work</h2>
+      <section id="work" class="section">
+        <h2 class="title">My work</h2>
         <p>Projects</p>
         <ul>
           <li>
@@ -265,9 +297,9 @@
         </ul>
       </section>
       <!-- Testimonials -->
-      <section id="testimonial">
-        <h2>Testimonials</h2>
-        <p>See what they say about me</p>
+      <section id="testimonial" class="section">
+        <h2 class="title">Testimonials</h2>
+        <p class="description">See what they say about me</p>
         <ul>
           <li>
             <img src="images/testimonials/people1.webp" alt="people1" />
@@ -316,9 +348,9 @@
     </main>
 
     <!-- footer -->
-    <footer id="contact">
-      <h2>Let&#39;s talk</h2>
-      <p>dream.corder.hyon@gmail.com</p>
+    <footer id="contact" class="title">
+      <h2 class="title">Let&#39;s talk</h2>
+      <p class="description">dream.corder.hyon@gmail.com</p>
       <ul>
         <li>
           <a
