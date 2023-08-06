@@ -1,18 +1,21 @@
 /* Global */
 :root {
   /* App Colors */
-  --color-primary: var(--color-black);
-  --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-blue);
+  --color-primary: var(--color-pink);
+  --color-primary-variant: var(--color-pink2);
+  --color-accent: var(--color-gray3);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
   /* Colors */
   --color-white: #ffffff;
-  --color-black: #050a13;
+  --color-black: #05130c;
+  --color-pink: #ffc2d1cc;
   --color-blue: #03e8f9;
+  --color-gray3: #26272775;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+  --color-pink2: #e8cfec;
 
   /* Size */
   --size--max-width: 1200px;
