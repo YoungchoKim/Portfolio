@@ -1,13 +1,12 @@
+"use strict";
+
 // window 글로벌 객체. 브라우저에서 기본으로 제공
 // window.document.querySelector();
 
 const header = document.querySelector(".header");
-console.log(header);
 const headerHeight = header.getBoundingClientRect().height;
-console.log(headerHeight);
 
 document.addEventListener("scroll", () => {
-  console.log(window.scrollY);
   if (window.scrollY > headerHeight) {
     header.classList.add("header--dark");
   } else {
@@ -17,11 +16,9 @@ document.addEventListener("scroll", () => {
 
 const home = document.querySelector(".home__container");
 const homeHeight = home.offsetHeight;
-console.log("home", homeHeight);
 
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
-  console.log(home.style.opacity);
 });
 
 const arrowUp = document.querySelector(".arrow-up");
@@ -31,4 +28,16 @@ document.addEventListener("scroll", () => {
   } else {
     arrowUp.style.opacity = 0;
   }
+});
+
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+console.log(navbarMenu);
+console.log(navbarToggle);
+navbarToggle.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+navbarMenu.addEventListener("click", () => {
+  navbarMenu.classList.remove("open");
 });
