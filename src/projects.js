@@ -20,7 +20,6 @@ function handleActiveSelection(target) {
 }
 
 function filterProjects(filter) {
-  // 프로젝트 필터링
   projects.forEach((project) => {
     if (filter === "all" || project.dataset.type == filter) {
       project.style.display = "block";
