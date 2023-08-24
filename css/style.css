@@ -131,6 +131,7 @@ button:focus {
 
 /* Home */
 #home {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
@@ -172,6 +173,25 @@ button:focus {
   outline: 2px solid var(--color-accent);
   color: var(--color-text);
   border-radius: 4px;
+}
+.devider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.devider svg {
+  position: relative;
+  display: block;
+  width: calc(166% + 1.3px);
+  height: 143px;
+}
+
+.devider .shape-fill {
+  fill: #ffffff;
 }
 
 /* About */
